@@ -40,6 +40,8 @@ events.on('new_value', (data) => {
   }
 
   // Handle UI
+  if (ref.hasClass(activeClass)) return
+
   if (exceededThreshold || type === 'explosion') {
     console.log('Exceeded! ', type)
     // remove the active class
@@ -52,7 +54,7 @@ events.on('new_value', (data) => {
       ref.addClass(activeAlertClass)
       setTimeout(() => {
         ref.removeClass(activeAlertClass)
-      }, 2000)
+      }, 4000)
     }
 
     // you're done here
