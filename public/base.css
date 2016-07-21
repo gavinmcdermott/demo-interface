@@ -103,9 +103,9 @@ h4 {
   -moz-animation: redToTan ease-out 1;
   animation: redToTan ease-out 1;
 
-  -webkit-animation-duration:4s;
-  -moz-animation-duration:4s;
-  animation-duration:4s;
+  -webkit-animation-duration:3.3s;
+  -moz-animation-duration:3.3s;
+  animation-duration:3.3s;
 
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
