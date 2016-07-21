@@ -5,14 +5,6 @@ import R from 'ramda'
 import $ from 'jquery'
 import { events } from './nomadData'
 
-
-
-
-
-
-
-
-
 events.on('new_value', (data) => {
   // console.log(data.type)
   const ref = $('#' + data.type).find('.sensor-inner')
@@ -76,6 +68,3 @@ events.on('new_value', (data) => {
     ref.removeClass(activeClass)
   }, 500)
 })
-
-
-
